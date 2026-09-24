@@ -300,7 +300,7 @@
       event.preventDefault();
       const motion = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
       window.scrollTo({ top: 0, behavior: motion });
-      history.replaceState(null, "", `${location.pathname}${location.search}#top`);
+      history.replaceState(null, "", `${location.pathname}#top`);
     });
   };
 

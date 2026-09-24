@@ -145,16 +145,9 @@ const readState = () => ({
   moriri: form.elements.moriri.checked,
 });
 
-const writeQuery = (state) => {
-  const go = PLACES.filter((name) => state[name]);
-  const params = new URLSearchParams({
-    days: String(state.days),
-    via: state.arrival,
-    pace: state.pace,
-    go: go.join(","),
-  });
-  const next = `${location.pathname}?${params}`;
-  if (`${location.pathname}${location.search}` !== next) {
+const clearQuery = () => {
+  const next = `${location.pathname}${location.hash}`;
+  if (`${location.pathname}${location.search}${location.hash}` !== next) {
     history.replaceState(null, "", next);
   }
 };
@@ -254,7 +247,7 @@ const render = () => {
       ? "1 night"
       : `${nights} nights`;
   daysInput.setAttribute("aria-valuenow", daysInput.value);
-  writeQuery(plan.input);
+  clearQuery();
 
   output.replaceChildren();
 
