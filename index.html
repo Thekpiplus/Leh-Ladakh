@@ -7,14 +7,36 @@
     <meta
       name="description"
       content="Leh Spirit is a story of Leh and Ladakh: the places, the roads, and the people who live there. Tashi and Tengeleck are friends in Leh. The eight days are one way to imagine going."
+      data-en="Leh Spirit is a story of Leh and Ladakh: the places, the roads, and the people who live there. Tashi and Tengeleck are friends in Leh. The eight days are one way to imagine going."
+      data-th="Leh Spirit คือเรื่องเล่าของ Leh และลาดักข์ สถานที่ ถนน และผู้คนที่อยู่ที่นั่น ทาชิและเต็งเกเล็กคือเพื่อนที่ Leh แปดวันเป็นทางหนึ่งในการนึกภาพการไป"
     />
     <meta
       name="keywords"
       content="Leh Ladakh, understand Ladakh, Pangong Lake, Nubra Valley, Lamayuru, Indus monasteries, slow travel Ladakh"
+      data-en="Leh Ladakh, understand Ladakh, Pangong Lake, Nubra Valley, Lamayuru, Indus monasteries, slow travel Ladakh"
+      data-th="Leh ลาดักข์, เข้าใจลาดักข์, ทะเลสาบ Pangong, หุบเขา Nubra, Lamayuru, วัดริมสินธุ, ท่องเที่ยวช้า"
     />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Leh Spirit" />
     <meta name="theme-color" content="#2F4858" />
+    <link rel="canonical" href="https://lehspirit.com/" />
+    <link rel="alternate" hreflang="en" href="https://lehspirit.com/" />
+    <link rel="alternate" hreflang="th" href="https://lehspirit.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://lehspirit.com/" />
+    <meta property="og:site_name" content="Leh Spirit" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Leh Spirit — the road outside, the journey inside" />
+    <meta property="og:description" content="Leh Spirit is a story of Leh and Ladakh: the places, the roads, and the people who live there. Tashi and Tengeleck are friends in Leh. The eight days are one way to imagine going." />
+    <meta property="og:url" content="https://lehspirit.com/" />
+    <meta property="og:image" content="https://lehspirit.com/images/pangong-hero.jpg" />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="th_TH" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Leh Spirit — the road outside, the journey inside" />
+    <meta name="twitter:description" content="Leh Spirit is a story of Leh and Ladakh: the places, the roads, and the people who live there. Tashi and Tengeleck are friends in Leh. The eight days are one way to imagine going." />
+    <meta name="twitter:image" content="https://lehspirit.com/images/pangong-hero.jpg" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png" />
     <link rel="icon" href="favicon-16.png" sizes="16x16" type="image/png" />
@@ -30,16 +52,106 @@
     <script type="application/ld+json" id="seo-ld">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Leh Spirit",
-        "description": "A story and reference for Leh and Ladakh: the places, the roads, and the people who live there.",
-        "areaServed": "Ladakh",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Leh",
-          "addressRegion": "Ladakh",
-          "addressCountry": "IN"
-        }
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://lehspirit.com/#leh-spirit",
+            "name": "Leh Spirit",
+            "url": "https://lehspirit.com/",
+            "image": "https://lehspirit.com/images/pangong-hero.jpg",
+            "description": "Leh Spirit is a story of Leh and Ladakh: the places, the roads, and the people who live there. Tashi and Tengeleck are friends in Leh. The eight days are one way to imagine going.",
+            "areaServed": "Ladakh",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Leh",
+              "addressRegion": "Ladakh",
+              "addressCountry": "IN"
+            },
+            "contactPoint": [
+              { "@type": "ContactPoint", "name": "Tashi", "telephone": "+91-95968-24268", "contactType": "reservations" },
+              { "@type": "ContactPoint", "name": "Tengeleck", "telephone": "+91-88991-14489", "contactType": "reservations" },
+              { "@type": "ContactPoint", "name": "Isara", "telephone": "+66-82-635-6266", "contactType": "reservations", "areaServed": "TH" }
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://lehspirit.com/#page",
+            "url": "https://lehspirit.com/",
+            "name": "Leh Spirit — the road outside, the journey inside",
+            "description": "Leh Spirit is a story of Leh and Ladakh: the places, the roads, and the people who live there. Tashi and Tengeleck are friends in Leh. The eight days are one way to imagine going.",
+            "inLanguage": "en",
+            "isPartOf": { "@id": "https://lehspirit.com/#leh-spirit" },
+            "publisher": { "@id": "https://lehspirit.com/#leh-spirit" },
+            "image": "https://lehspirit.com/images/pangong-hero.jpg"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Leh Spirit", "item": "https://lehspirit.com/" }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is Leh Spirit?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Leh Spirit is a story and a reference for Leh and Ladakh, written so you can understand the place and the people who live there before you go. Tashi and Tengeleck are our friends in Leh. They drive the Innova. You walk the monasteries. They take the passes. The eight days are one way to imagine the road."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How many days is the journey?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Eight days and seven nights. The first days stay in Leh, near 3,500 metres, before any high pass. If you have fewer days, or more, you can plan your Ladakh days from 3 to 14. Count the day you land and the morning you fly out."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where does the journey go?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Leh, then Lamayuru and the moonland, then Thiksey, Hemis, and Stakna. After that, Chang La to Pangong Lake, and on to Nubra Valley, before the road home to Leh. High roads, especially Pangong to Nubra, can change with the weather, the road, your health, and the local rules."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where do you sleep?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The nights fall in four kinds of place. Nights 1, 2, and 7 are in Leh. Night 3 can stay in Leh or near Thiksey. Night 4 is at Pangong, near Spangmik. Nights 5 and 6 are in Nubra. Rooms are confirmed with the fare."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do Pangong and Nubra need a permit?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Nubra, Pangong, and Tso Moriri need a permit. We arrange the papers in Leh the day before, with the identity document you travel on. Lamayuru and the Indus monasteries do not need that permit."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I fly from Thailand?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "There is no direct flight. Bangkok or Phuket to Delhi, then Delhi to Leh, about an hour. A return often falls around 15,000–30,000 baht. Leh is about 3,500 metres."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Who do I contact?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Tashi is on +91 95968 24268 and Tengeleck is on +91 88991 14489. Both numbers are WhatsApp. Isara answers the Thailand number, +66 82 635 6266. Write to them directly. They reply with what is possible, and with the fare."
+                }
+              }
+            ]
+          }
+        ]
       }
     </script>
   </head>
@@ -914,7 +1026,6 @@
       <span class="th">ขึ้นบน</span>
     </a>
 
-    <script src="site.js"></script>
     <script src="seo.js"></script>
     <script src="planner.js"></script>
     <script src="main.js"></script>
